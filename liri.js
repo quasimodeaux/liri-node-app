@@ -79,13 +79,16 @@ function myTweets() {
 function runRandomTxt() {
     var fs = require("fs");
     fs.readFile("random.txt", "utf8", function (error, data) {
+        var dataSplit = data.split(",");
+        var action = dataSplit[0];
+
         if (error) {
             return console.log(error);
         }
         console.log(data);
 
 
-    });
+    })};
 
 
 function spotifyThis (){
