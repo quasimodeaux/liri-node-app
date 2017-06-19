@@ -86,6 +86,7 @@ function runRandomTxt() {
             return console.log(error);
         }
         console.log(data);
+        console.log(action);
 
 
     })};
@@ -106,7 +107,8 @@ function spotifyThis (){
 
             // Do something with 'data'
         console.log("spotify this");
-        console.log(data.tracks);
+        console.log(data.tracks.items[0].artists);
+        console.log(data.tracks.items[0].artists.album);
 
     });
 
